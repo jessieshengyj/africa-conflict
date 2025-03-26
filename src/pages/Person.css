@@ -9,6 +9,12 @@
   padding: 1.5rem;
 }
 
+.section-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .name-section {
   padding: 1.5rem;
   padding-bottom: 0;
@@ -46,4 +52,11 @@
 .iframe-container {
   display: flex;
   justify-content: center;
+}
+
+.iframe-view {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  width: 100%;
 }
