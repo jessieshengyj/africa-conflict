@@ -5,7 +5,8 @@ function PersonB() {
         <div className="flex flex-col gap-2">
             <div className="name-section">
                 <h1 className="title name">Jessie Sheng</h1>
-                <h2 className="grey-subtitle">Subtitle with more detail</h2>
+                <h2 className="grey-subtitle">Exploring the geographic distribution of
+                    conflicts and key actors to understand regional patterns.</h2>
             </div>
 
             <div className="question-section flex flex-col gap-2">
@@ -76,12 +77,11 @@ function PersonB() {
                         </div>
                         <div>
                             <li><strong>Bar Chart:</strong></li>
-                            <p><strong>Position (X, Y):</strong> The bar chart uses vertical position and length to
-                                accurately compare countries, as these are among the most perceptually effective
-                                channels.</p>
-                            <p><strong>Logarithmic Scale:</strong> The x-axis uses a log scale to account for large
-                                variations in conflict numbers, preventing smaller values from being overshadowed while
-                                maintaining meaningful comparisons.</p>
+                            <p><strong>Position (X, Y), Length:</strong> The bar chart leverages vertical position and
+                                bar length to effectively compare conflict numbers across countries, as these are among
+                                the most perceptually accurate channels for encoding numerical data. The y-axis uses a
+                                <strong> log scale</strong> to accommodate large variations in conflict numbers, ensuring smaller values
+                                remain visible while preserving meaningful comparisons. </p>
                         </div>
                     </div>
                 </div>
@@ -95,11 +95,12 @@ function PersonB() {
                             and conflict intensity.
                         </li>
                         <li><strong>Multi-Selection:</strong> (Shift + Click) allows users to compare multiple
-                            countries, enabling deeper regional analysis.
-                        </li>
-                        <li><strong>Top N Selector:</strong> Users can select the top N conflict regions directly on the
-                            map to observe their spatial distribution, reducing cognitive load (Tufte) by allowing the
+                            countries, enabling deeper regional analysis. Users can select the top N conflict regions directly on the
+                            map to observe their spatial distribution, reducing cognitive load by allowing the
                             visualization to present insights dynamically.
+                        </li>
+                        <li><strong>Tooltips:</strong> Provide precise numerical summaries and details of the data points
+                            without overwhelming the visual.
                         </li>
                     </ul>
                 </div>
@@ -115,9 +116,9 @@ function PersonB() {
                             conflict levels.</p>
                         <p><strong>Limitations:</strong> The color scale could be adjusted to improve contrast for
                             mid-range conflict values, making distinctions clearer. Additionally, country-level
-                            aggregation may obscure regional patterns—grouping nations into broader regions (e.g., East,
+                            aggregation may obscure regional patterns. Grouping nations into broader regions (e.g., East,
                             West, Central, Southern Africa) or incorporating subnational data could provide more
-                            granular insights.</p>
+                            detailed insights.</p>
                     </div>
                 </div>
             </div>
