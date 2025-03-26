@@ -6,7 +6,7 @@ function PersonA() {
             {/* Research Question 1 */}
             <div className="name-section">
                 <h1 className="title name">Wendy Phung</h1>
-                <h2 className="grey-subtitle">Subtitle with more detail</h2>
+                <h2 className="grey-subtitle">Examining with the primary focus of time aspect on actor alliance, conflict intensity, and event types across geographic regions.</h2>
             </div>
 
             <div className="question-section flex flex-col gap-2">
@@ -83,17 +83,15 @@ function PersonA() {
                 {/* Interactivity */}
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
-                    <ul className="list">
-                        <li><strong>Actor Dropdown Selector:</strong> Enables focused exploration of conflict patterns
+                        <p><strong>Actor Dropdown Selector:</strong> Enables focused exploration of conflict patterns
                             involving specific actor types. This enhances insight into actor-specific influences.
-                        </li>
-                        <li><strong>Click Selection:</strong> Enhances comparative analysis by highlighting a selected
+                        </p>
+                        <p><strong>Click Selection:</strong> Enhances comparative analysis by highlighting a selected
                             country across both charts, reducing visual clutter by greying out unselected data.
-                        </li>
-                        <li><strong>Tooltips:</strong> Provide detailed data points on the line chart, ensuring detailed
+                        </p>
+                        <p><strong>Tooltips:</strong> Provide detailed data points on the line chart, ensuring detailed
                             context without overwhelming the visual.
-                        </li>
-                    </ul>
+                        </p>
                 </div>
 
                 {/* Critique */}
@@ -196,17 +194,15 @@ function PersonA() {
                 {/* Interactivity */}
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
-                    <ul className="list">
-                        <li><strong>Country Dropdown Selector:</strong> Enhances focus by limiting data to a specific
+                        <p><strong>Country Dropdown Selector:</strong> Enhances focus by limiting data to a specific
                             country across all charts.
-                        </li>
-                        <li><strong>Year Slider:</strong> Empowers dynamic exploration of actor alliances for individual
+                        </p>
+                        <p><strong>Year Slider:</strong> Empowers dynamic exploration of actor alliances for individual
                             years.
-                        </li>
-                        <li><strong>Tooltips:</strong> Present throughout all charts to provide deeper insights without
+                        </p>
+                        <p><strong>Tooltips:</strong> Present throughout all charts to provide deeper insights without
                             visual clutter.
-                        </li>
-                    </ul>
+                        </p>
                 </div>
 
                 {/* Critique */}
@@ -241,7 +237,7 @@ function PersonA() {
                     <iframe
                         src="/africa-conflict/charts/wendy_plot3.html"
                         width="1450"
-                        height="540"
+                        height="600"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -311,13 +307,11 @@ function PersonA() {
                 {/* Interactivity */}
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
-                    <ul className="list">
-                        <li><strong>Event Type, Region, and Month Dropdowns:</strong> Enable targeted exploration of
+                        <p><strong>Event Type, Region, and Month Dropdowns:</strong> Enable targeted exploration of
                             seasonal patterns by filtering both charts simultaneously.
-                        </li>
-                        <li><strong>Tooltip:</strong> Offers precise data point insights without cluttering the visuals.
-                        </li>
-                    </ul>
+                        </p>
+                        <p><strong>Tooltip:</strong> Offers precise data point insights without cluttering the visuals.
+                        </p>
                 </div>
 
                 {/* Critique */}

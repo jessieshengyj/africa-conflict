@@ -2,6 +2,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import PersonA from "./pages/PersonA.jsx";
 import PersonB from "./pages/PersonB.jsx";
+import PersonC from "./pages/PersonC.jsx";
 import Home from "./pages/Home.jsx";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                         <Routes>
                             <Route path="/wendy" element={<PersonA />} />
                             <Route path="/jessie" element={<PersonB />} />
+                            <Route path="/rowan" element={<PersonC />} />
                             <Route path="/" element={<Home />} />
                         </Routes>
                     </div>
@@ -30,6 +32,7 @@ function App() {
                         <div>
                             <li><a className="text-md" href="/africa-conflict/#/wendy">Wendy</a></li>
                             <li><a className="text-md" href="/africa-conflict/#/jessie">Jessie</a></li>
+                            <li><a className="text-md" href="/africa-conflict/#/rowan">Rowan</a></li>
                         </div>
                     </ul>
                 </div>
