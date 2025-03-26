@@ -6,7 +6,7 @@ function PersonC() {
             {/* Research Question 1 */}
             <div className="name-section">
                 <h1 className="title name">Rowan Murphy</h1>
-                <h2 className="grey-subtitle">Subtitle with more detail</h2>
+                <h2 className="grey-subtitle">Actors and Interactions Within Somalia</h2>
             </div>
 
             <div className="question-section flex flex-col gap-2">

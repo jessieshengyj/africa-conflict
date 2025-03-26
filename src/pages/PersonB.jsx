@@ -232,8 +232,8 @@ function PersonB() {
                             other hand, provides a clear numerical comparison of actor involvement, making it easier to
                             rank and compare activity levels. The interactive elements allow users to filter
                             for relevant information and highlighting allows for easy comparisons.</p>
-                        <p><strong>Limitations:</strong> The scatter plot may become cluttered with too many actors
-                            selected. Additionally, using size encoding for conflict intensity could further improve
+                        <p><strong>Limitations:</strong> The scatter plot may become cluttered if too many actors
+                            are presented. Additionally, using size encoding for conflict intensity could further improve
                             clarity by distinguishing high-impact events.</p>
                     </div>
                 </div>
