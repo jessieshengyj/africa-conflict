@@ -11,9 +11,9 @@ function App() {
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
                 {/* Page content */}
-                <div className="drawer-content flex flex-col">
+                <div className="drawer-content flex flex-col min-h-screen">
                     <Navbar />
-                    <div className="items-center justify-center p-4">
+                    <div className="items-center justify-center p-4 h-full">
                         <Routes>
                             <Route path="/wendy" element={<PersonA />} />
                             <Route path="/jessie" element={<PersonB />} />
