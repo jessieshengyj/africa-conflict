@@ -242,7 +242,7 @@ function PersonB() {
                         src="/africa-conflict/charts/jessie_plot3.html"
                         width="1200"
                         // height="750"
-                        height="840"
+                        height="860"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
