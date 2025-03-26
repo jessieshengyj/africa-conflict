@@ -13,7 +13,7 @@ function App() {
                 {/* Page content */}
                 <div className="drawer-content flex flex-col min-h-screen">
                     <Navbar />
-                    <div className="items-center justify-center p-4 h-full">
+                    <div className="items-center justify-center py-4 px-8 h-full">
                         <Routes>
                             <Route path="/wendy" element={<PersonA />} />
                             <Route path="/jessie" element={<PersonB />} />
