@@ -109,14 +109,16 @@ function PersonB() {
                 <div className="section">
                     <h2 className="subtitle">Critique</h2>
                     <div className="section-sub">
-                        <p><strong>Strengths:</strong> The visualization effectively highlights conflict patterns,
-                            allowing viewers to analyze geographic clustering and disparities in conflict intensity. The
-                            bidirectional selection provides an intuitive way to link spatial and numerical insights,
-                            while the logarithmic scale ensures fair comparisons between countries with vastly different
-                            conflict levels.</p>
+                        <p><strong>Strengths:</strong> The visualization effectively highlights conflict patterns, allowing
+                            viewers to analyze geographic clustering and disparities in conflict intensity. The bidirectional
+                            selection provides an intuitive way to link spatial and numerical insights, while the
+                            logarithmic scale ensures fair comparisons between countries with vastly different conflict levels.
+                            The choropleth serves as a spatial heatmap, making it well-suited for analyzing the
+                            geographic distribution of conflicts, while the bar chart facilitates direct numerical
+                            comparisons across multiple countries.</p>
                         <p><strong>Limitations:</strong> The color scale could be adjusted to improve contrast for
                             mid-range conflict values, making distinctions clearer. Additionally, country-level
-                            aggregation may obscure regional patterns. Grouping nations into broader regions (e.g., East,
+                            aggregation may hide regional patterns. Grouping nations into broader regions (e.g., East,
                             West, Central, Southern Africa) or incorporating subnational data could provide more
                             detailed insights.</p>
                     </div>
@@ -139,7 +141,7 @@ function PersonB() {
                     <iframe
                         src="/africa-conflict/charts/jessie_plot2.html"
                         width="1200"
-                        height="780"
+                        height="790"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -154,7 +156,7 @@ function PersonB() {
                             high-conflict regions. The tasks include:
                         </p>
                         <ul className="list">
-                            <li>Identifying key actors involved in conflicts across the most affected regions.</li>
+                            <li>Identifying key actors involved in conflicts across the (top 5) most affected countries.</li>
                             <li>Comparing the activity levels of different actors across event types.</li>
                             <li>Exploring geographic patterns of actor involvement in conflict zones.</li>
                         </ul>
@@ -167,9 +169,9 @@ function PersonB() {
                     <div className="section-sub">
                         <p>
                             <strong>Scatter Plot (Map View):</strong> The scatter plot represents conflict event
-                            locations, using color to differentiate actors. This makes it easier to spot regional actor
-                            distribution patterns. The interactive legend allows filtering specific actors, reducing
-                            visual clutter and aiding comparison.
+                            locations by encoding longitude and latitude, using color to differentiate actors.
+                            This makes it easier to spot regional actor distribution patterns. The interactive
+                            legend allows filtering specific actors, reducing visual clutter and aiding comparison.
                         </p>
                         <p>
                             <strong>Bar Chart:</strong> The bar chart provides a ranking of actors based on their
@@ -202,7 +204,7 @@ function PersonB() {
                     <h2 className="subtitle">Interactivity</h2>
                     <ul className="list">
                         <li><strong>Interactive Legend:</strong> Clicking on an actor in the legend highlights their
-                            activity on the map and updates the bar chart, aiding actor-specific analysis.
+                            activity on the map and also updates the bar chart, supporting actor-specific analysis.
                         </li>
                         <li><strong>Dropdown Filters:</strong> Users can filter by country and event type, refining
                             their focus and reducing cognitive load.
