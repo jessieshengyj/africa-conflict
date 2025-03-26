@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/africa-conflict/",
+  base: "/africa-conflict/#",
 })
