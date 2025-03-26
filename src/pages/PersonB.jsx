@@ -306,6 +306,7 @@ function PersonB() {
                             <li><strong>Line Chart:</strong></li>
                             <p><strong>Position (X, Y):</strong> The line chart uses the x-axis for time (years) and the
                                 y-axis for conflict counts, ensuring clear trend visualization.</p>
+                            <p><strong>Color:</strong> Represents the different countries, for easier comparison.</p>
                         </div>
                         <div>
                             <li><strong>Map:</strong></li>
@@ -343,7 +344,7 @@ function PersonB() {
                             dynamic map allows users to explore both trends over time and geographical patterns simultaneously.
                             The interactive elements, like the legend and time slider, significantly enhance user experience and exploration.</p>
                         <p><strong>Limitations:</strong> While the visualization is effective, it could be further
-                            refined in a few areas. The line chart might benefit from a smoothing option to help
+                            refined in a few areas. The line chart might benefit from a smoothing option or smaller time intervals to help
                             reduce abrupt fluctuations, making long-term trends clearer. Additionally, the map's
                             legend for event size encoding could be improved for clarity to ensure users interpret
                             variations in size correctly. Finally, adding regional groupings or filtering options could
