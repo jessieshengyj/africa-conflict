@@ -4,6 +4,7 @@ import PersonA from "./pages/PersonA.jsx";
 import PersonB from "./pages/PersonB.jsx";
 import PersonC from "./pages/PersonC.jsx";
 import Home from "./pages/Home.jsx";
+import PersonD from "./pages/PersonD.jsx";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                             <Route path="/wendy" element={<PersonA />} />
                             <Route path="/jessie" element={<PersonB />} />
                             <Route path="/rowan" element={<PersonC />} />
+                            <Route path="/yao" element={<PersonD />} />
                             <Route path="/" element={<Home />} />
                         </Routes>
                     </div>
@@ -33,6 +35,7 @@ function App() {
                             <li><a className="text-md" href="/africa-conflict/#/wendy">Wendy</a></li>
                             <li><a className="text-md" href="/africa-conflict/#/jessie">Jessie</a></li>
                             <li><a className="text-md" href="/africa-conflict/#/rowan">Rowan</a></li>
+                            <li><a className="text-md" href="/africa-conflict/#/yao">Junyao</a></li>
                         </div>
                     </ul>
                 </div>
