@@ -175,7 +175,8 @@ function PersonB() {
                         </p>
                         <p>
                             <strong>Bar Chart:</strong> The bar chart provides a ranking of actors based on their
-                            conflict involvement. It uses horizontal bars for easy comparison of actor activity levels.
+                            conflict involvement for a specific type of conflict. It uses horizontal bars for easy
+                            comparison of actor activity levels and better readability.
                         </p>
                     </div>
                 </div>
@@ -193,6 +194,8 @@ function PersonB() {
                         </div>
                         <div>
                             <li><strong>Bar Chart:</strong></li>
+                            <p><strong>Position (Y), Color:</strong> Represents different actors involved in the
+                                selected country and event type.</p>
                             <p><strong>Length (Bar Chart):</strong> Encodes the number of conflicts per actor,
                                 leveraging the perceptual strength of bar charts.</p>
                         </div>
@@ -209,9 +212,12 @@ function PersonB() {
                         <li><strong>Dropdown Filters:</strong> Users can filter by country and event type, refining
                             their focus and reducing cognitive load.
                         </li>
-                        <li><strong>Selection Mechanism:</strong> Clicking on an actor highlights their corresponding
-                            data in both charts, making actor-specific comparisons more intuitive.
+                        <li><strong>Tooltips:</strong> Provide detailed numerical summaries of the
+                            data points on country, actor, and event type.
                         </li>
+                        {/*<li><strong>Selection Mechanism:</strong> Clicking on an actor highlights their corresponding*/}
+                        {/*    data in both charts, making actor-specific comparisons more intuitive.*/}
+                        {/*</li>*/}
                     </ul>
                 </div>
 
@@ -220,9 +226,13 @@ function PersonB() {
                     <h2 className="subtitle">Critique</h2>
                     <div className="section-sub">
                         <p><strong>Strengths:</strong> The visualization effectively balances spatial and categorical
-                            data, making it easy to identify trends in actor activity. The interactive elements enhance
-                            usability and allow for flexible exploration.</p>
-                        <p><strong>Limitations:</strong> The scatter plot may become cluttered if too many actors are
+                            data, enabling users to explore patterns in actor activity across different regions. The
+                            scatter plot map serves as a spatial heatmap, accurately representing conflict
+                            event locations while allowing users to detect geographic clustering. The bar chart, on the
+                            other hand, provides a clear numerical comparison of actor involvement, making it easier to
+                            rank and compare activity levels. The interactive elements allow users to filter
+                            for relevant information and highlighting allows for easy comparisons.</p>
+                        <p><strong>Limitations:</strong> The scatter plot may become cluttered with too many actors
                             selected. Additionally, using size encoding for conflict intensity could further improve
                             clarity by distinguishing high-impact events.</p>
                     </div>
