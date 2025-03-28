@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"layer": [{"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "none", "stroke": "black", "strokeWidth": 0.25}, "encoding": {"opacity": {"condition": {"param": "param_7", "value": 1}, "value": 0.1}, "tooltip": [{"field": "COUNTRY", "type": "nominal"}]}, "name": "view_3", "projection": {"reflectY": true, "type": "identity"}, "title": "africa", "transform": [{"lookup": "id", "from": {"data": {"url": "yao-data.json"}, "key": "ID", "fields": ["COUNTRY", "FATALITIES"]}}, {"filter": {"field": "id", "oneOf": [12, 24, 204, 854, 108, 120, 140, 148, 174, 180, 178, 384, 262, 818, 226, 232, 231, 270, 288, 324, 624, 404, 426, 430, 434, 450, 454, 466, 478, 480, 504, 508, 516, 562, 566, 638, 646, 678, 686, 690, 706, 710, 728, 729, 748, 788, 800, 834, 887, 894, 716, 72, 266, 768]}}]}, {"data": {"url": "yao-data.json"}, "mark": {"type": "circle", "size": 10}, "encoding": {"color": {"field": "ACTOR1", "title": "Top 10 ACTOR1", "type": "nominal"}, "latitude": {"field": "LATITUDE", "type": "quantitative"}, "longitude": {"field": "LONGITUDE", "type": "quantitative"}, "opacity": {"value": 0.7}, "tooltip": [{"field": "EVENT_TYPE", "type": "nominal"}, {"field": "ACTOR1", "type": "nominal"}, {"field": "ACTOR2", "type": "nominal"}, {"field": "FATALITIES", "type": "quantitative"}, {"field": "COUNTRY", "type": "nominal"}, {"field": "LOCATION", "type": "nominal"}, {"field": "YEAR", "type": "quantitative"}]}, "transform": [{"filter": {"field": "ACTOR1", "oneOf": ["Protesters", "Unidentified Armed Group", "Rioters", "Military Forces of Somalia", "Al Shabaab", "Military Forces of Sudan", "Military Forces of Democratic Republic of Congo", "LRA: Lords Resistance Army", "Military Forces of Ethiopia", "ZANU-PF: Zimbabwe African National Union-Patriotic Front"]}}, {"filter": "(datum.YEAR === param_8)"}]}], "height": 700, "width": 400}, {"data": {"url": "yao-data.json"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "ACTOR1", "type": "nominal"}, "tooltip": [{"field": "ACTOR1", "type": "nominal"}, {"aggregate": "sum", "field": "FATALITIES", "type": "quantitative"}], "x": {"aggregate": "count", "title": "Count of Conflicts", "type": "quantitative"}, "y": {"field": "COUNTRY", "sort": "-x", "type": "nominal"}}, "transform": [{"filter": {"param": "param_7"}}, {"filter": {"field": "ACTOR1", "oneOf": ["Protesters", "Unidentified Armed Group", "Rioters", "Military Forces of Somalia", "Al Shabaab", "Military Forces of Sudan", "Military Forces of Democratic Republic of Congo", "LRA: Lords Resistance Army", "Military Forces of Ethiopia", "ZANU-PF: Zimbabwe African National Union-Patriotic Front"]}}, {"filter": "(datum.YEAR === param_8)"}]}], "params": [{"name": "param_7", "select": {"type": "point", "fields": ["COUNTRY"]}, "views": ["view_3"]}, {"name": "param_8", "bind": {"input": "range", "max": 2017.0, "min": 1997.0, "name": "Year", "step": 1}, "value": 1997.0}], "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
