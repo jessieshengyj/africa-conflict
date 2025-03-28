@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"layer": [{"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.25}, "encoding": {"color": {"condition": {"param": "param_1", "field": "COUNTRY", "type": "nominal", "legend": null}, "value": "lightgray"}, "tooltip": [{"field": "COUNTRY", "type": "nominal"}]}, "name": "view_1", "projection": {"reflectY": true, "type": "identity"}, "title": "Select a Country From Map of Africa!", "transform": [{"lookup": "id", "from": {"data": {"url": "yao-data.json"}, "key": "ID", "fields": ["COUNTRY", "FATALITIES"]}}, {"filter": {"field": "id", "oneOf": [12, 24, 204, 854, 108, 120, 140, 148, 174, 180, 178, 384, 262, 818, 226, 232, 231, 270, 288, 324, 624, 404, 426, 430, 434, 450, 454, 466, 478, 480, 504, 508, 516, 562, 566, 638, 646, 678, 686, 690, 706, 710, 728, 729, 748, 788, 800, 834, 887, 894, 716, 72, 266, 768]}}]}, {"data": {"url": "yao-data.json"}, "mark": {"type": "text", "fontSize": 5}, "encoding": {"latitude": {"field": "latitude", "type": "quantitative"}, "longitude": {"field": "longitude", "type": "quantitative"}, "text": {"field": "COUNTRY", "type": "nominal"}}, "transform": [{"aggregate": [{"op": "average", "field": "LONGITUDE", "as": "longitude"}, {"op": "average", "field": "LATITUDE", "as": "latitude"}], "groupby": ["COUNTRY"]}, {"filter": {"param": "param_1"}}]}], "height": 500, "width": 350}, {"data": {"url": "yao-data.json"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "ACTOR1", "type": "nominal"}, "tooltip": [{"field": "ACTOR1", "type": "nominal"}, {"field": "total_deaths", "type": "quantitative"}], "x": {"field": "total_deaths", "type": "quantitative"}, "y": {"field": "ACTOR1", "sort": "-x", "type": "nominal"}}, "height": 400, "title": "Top 10 Violent Actors in the Country", "transform": [{"filter": {"param": "param_1"}}, {"filter": "(datum.YEAR === param_2)"}, {"aggregate": [{"op": "sum", "field": "FATALITIES", "as": "total_deaths"}], "groupby": ["ACTOR1"]}, {"window": [{"op": "rank", "field": "total_deaths", "as": "rank"}], "sort": [{"field": "total_deaths", "order": "descending"}]}, {"filter": "(datum.rank <= 10)"}], "width": 350}], "params": [{"name": "param_1", "select": {"type": "point", "fields": ["COUNTRY"]}, "views": ["view_1"]}, {"name": "param_2", "bind": {"input": "range", "max": 2017.0, "min": 1997.0, "name": "Year", "step": 1}, "value": 1997.0}], "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
