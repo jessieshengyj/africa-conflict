@@ -6,7 +6,7 @@ function PersonD() {
             {/* Research Question 1 */}
             <div className="name-section">
                 <h1 className="title name">Junyao Wang</h1>
-                <h2 className="grey-subtitle">Description Here</h2>
+                <h2 className="grey-subtitle">Actors and Themes with Conflicts</h2>
             </div>
 
             <div className="question-section flex flex-col gap-2">
@@ -14,7 +14,7 @@ function PersonD() {
                <div className="section">
                    <h1 className="title">Research Question 1:</h1>
                    <p>
-                       Which Actors of conflicts in Africa Have the most Violent Tendencies Throughout Time
+                       Which actors of conflicts in Africa have the most violent tendencies throughout time?
                    </p>
                 </div> 
 
@@ -23,13 +23,12 @@ function PersonD() {
                    <iframe
                        src="/africa-conflict/charts/yao_viz1.html"
                        width="1200"
-                       height="400"
+                       height="600"
                        frameBorder="0"
                        className="iframe-view"
                    ></iframe>
                </div>
 
-               /!* Summary of Task *!/
                <div className="section">
                    <h2 className="subtitle">Summary of Tasks</h2>
                    <div className="section-sub">
@@ -89,8 +88,8 @@ function PersonD() {
                        <div>
                            <p><strong>X-Axis:</strong> shows the total deaths of all conflicts the actor has caused.</p>
                            <p><strong>Y-Axis:</strong>The top 10 names of each ACTOR1. This is sorted by the amount of deaths in descending order.</p>
-                           <p><strong>Color:</strong> Colored by the ACTOR to show differentiation between the bars instead of just one uniform color. Conflicts may have had different locations and different counter-actors (ACTOR2) so therefore, this information is not shown on the tooltips</p>
-                           <p><strong>:</strong> Shows even further clarity on actor 1 and provides the exact total fatalities that actor has caused or been involved with.</p>
+                           <p><strong>Color:</strong> Colored by the ACTOR to show differentiation between the bars instead of just one uniform color. Conflicts may have had different locations and different counter-actors (ACTOR2) so therefore, this information is not shown on the tooltips.</p>
+                           <p><strong>Tooltips:</strong> Shows even further clarity on actor 1 and provides the exact total fatalities that actor has caused or been involved with.</p>
                        </div>
                    </div>
                </div>
@@ -119,7 +118,7 @@ function PersonD() {
                <div className="section">
                    <h1 className="title">Research Question 2:</h1>
                    <p>
-                       What are the most Frequent Actors and the Conflict Events they Tend to Cause?
+                       What are the most frequent actors and the conflict events they tend to cause?
                    </p>
                </div>
 
@@ -128,7 +127,7 @@ function PersonD() {
                    <iframe
                        src="/africa-conflict/charts/yao_viz2.html"
                        width="1200"
-                       height="690"
+                       height="550"
                        frameBorder="0"
                        className="iframe-view"
                    ></iframe>
@@ -154,10 +153,10 @@ function PersonD() {
                    <div className="section-sub">
                        <h2 className="subtitle">Visualization Choices and Justification</h2>
                        <p>
-                           <strong>Bar Chart:</strong> learly shows a sorted view of top 10 frequent actors and the amount of incidents they are involved with as well as the corresponding actor 2 they most tend to be involved with.
+                           <strong>Bar Chart:</strong> Clearly shows a sorted view of top 10 frequent actors and the amount of incidents they are involved with as well as the corresponding actor 2 they most tend to be involved with.
                        </p>
                        <p>
-                           <strong>Pie Chart:</strong> pie charts are good at showing breakdowns of events that happened which informs the user on tendencies that each actor is likely to cause.
+                           <strong>Pie Chart:</strong> Pie charts are good at showing breakdowns of events that happened which informs the user on tendencies that each actor is likely to cause.
                        </p>
                    </div>
                </div>
@@ -191,7 +190,7 @@ function PersonD() {
                <div className="section">
                    <h2 className="subtitle">Interactivity</h2>
 
-                   <p><strong>Interaction Selection:</strong> the user is able to select a sub-bar of the type of actor representing the conflict pair between actor1 and actor2. This directly changes and applies a filter to pie chart breaking down the types of conflicts that occurred.</p>
+                   <p><strong>Interaction Selection:</strong> The user is able to select a sub-bar of the type of actor representing the conflict pair between ACTOR1 and ACTOR2. This directly changes and applies a filter to pie chart breaking down the types of conflicts that occurred.</p>
                    <p><strong>Slider:</strong> The slider filters each conflict by the year.</p>
                    <p><strong>Dropdown:</strong> The user can filter by the country using the dropdown.</p>
 
@@ -204,13 +203,12 @@ function PersonD() {
                    <h2 className="subtitle">Critique</h2>
                    <div className="section-sub">
                        <p><strong>Strengths:</strong> This informs a tourist on the exact tendencies that each actor pair is likely to arise. It lets the user learn about conflicts that have occurred throughout history and how intense each conflict is (in terms of fatalities).</p>
-                       <p><strong>Limitations:</strong>Interactivity is a bit work-intensive (and might require a bit  of dexterity) because the user has to hover above each bar if inquiries about each actor2 want to be made. This may be hard if the bar is very thin.  </p>
+                       <p><strong>Limitations: </strong>Interactivity is a bit work-intensive (and might require a bit  of dexterity) because the user has to hover above each bar if inquiries about each actor2 want to be made. This may be hard if the bar is very thin.  </p>
                    </div>
                </div>
             </div>
 
             <div className="question-section flex flex-col gap-2">
-               /!* Research Question 3 *!/
                <div className="section">
                    <h1 className="title">Research Question 3:</h1>
                    <p>
@@ -218,13 +216,12 @@ function PersonD() {
                    </p>
                </div>
 
-               /!* Visualization View *!/
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
                        src="/africa-conflict/charts/yao_viz3.html"
                        width="1450"
-                       height="650"
+                       height="920"
                        frameBorder="0"
                        className="iframe-view"
                    ></iframe>
@@ -239,7 +236,7 @@ function PersonD() {
                        </p>
                        <ul className="list">
                            <li>Exploring geographical distributions of prominent actors throughout time.</li>
-                           <li>Analyzing the most conflicted countries</li>
+                           <li>Analyzing the most conflicted countries.</li>
                            <li>Analyzing the most conflicted countries throughout time. Can one country continually be seen in the top places on the chart?</li>
                        </ul>
                    </div>
@@ -253,7 +250,7 @@ function PersonD() {
                            <strong>Map of Africa with Point Markers:</strong> Viewing the point markers on the map ensures that the user understands which regions are the most conflicted.  If the user sees a lot of points in a particular region, the user can click on that region which will reflect analytics in the bar chart.
                        </p>
                        <p>
-                           <strong>LBar Chart:</strong> The bar chart is sorted and it allows the user to immediately see the country with the highest conflicts. Once the user has clicked the region of interest from the visualization above, analytics of that country will be filtered on the right with a breakdown of the prominent actors.
+                           <strong>Bar Chart:</strong> The bar chart is sorted and it allows the user to immediately see the country with the highest conflicts. Once the user has clicked the region of interest from the visualization above, analytics of that country will be filtered on the right with a breakdown of the prominent actors.
                        </p>
                    </div>
                </div>
@@ -265,7 +262,7 @@ function PersonD() {
                        <div>
                            <p><strong>Opacity: </strong> Opacity is high or low dependent on the condition that the user selects the country or not.
                            </p>
-                           <p><strong>Tooltip:</strong>Used to encode name of the country to better inform the user.
+                           <p><strong>Tooltip: </strong>Used to encode name of the country to better inform the user.
                            </p>
                        </div>
                    </div>
@@ -276,13 +273,13 @@ function PersonD() {
                    <h2 className="subtitle">Channels (Point Markers for the Map)</h2>
                    <div className="section-sub">
                        <div>
-                           <p><strong>Longitude: </strong> the longitude of the event that happened
+                           <p><strong>Longitude: </strong> The longitude of the event that happened
                            </p>
-                           <p><strong>Latitude: </strong> the latitude of the event that happened
+                           <p><strong>Latitude: </strong> The latitude of the event that happened
                            </p>
                            <p><strong>Color: </strong>Colored by the main actor, ACTOR1
                            </p>
-                           <p><strong>Tooltip:</strong>Used to encode the name of both actors, the fatalities that occurred, the country, the specific location, and the year that the conflict occurred.
+                           <p><strong>Tooltip: </strong>Used to encode the name of both actors, the fatalities that occurred, the country, the specific location, and the year that the conflict occurred.
                            </p>
                        </div>
                    </div>
@@ -292,8 +289,8 @@ function PersonD() {
                <div className="section">
                    <h2 className="subtitle">Interactivity</h2>
 
-                   <strong>Brush Selection:</strong> The user can select the country which will grey out the other countries and filter out analytics displayed on the bar chart on the right. This is especially useful in the case that the user sees a dense cluster of points in a specific area.
-                   <strong>Slider:</strong> filters by year as the user slides the widget around so that geographical movement of points can be observed throughout time.
+                   <p><strong>Selection:</strong> The user can select the country which will grey out the other countries and filter out analytics displayed on the bar chart on the right. This is especially useful in the case that the user sees a dense cluster of points in a specific area.</p>
+                   <p><strong>Slider:</strong> Filters by year as the user slides the widget around so that geographical movement of points can be observed throughout time.</p>
                </div>
 
             {/*    /!* Critique *!/*/}
@@ -301,7 +298,7 @@ function PersonD() {
                    <h2 className="subtitle">Critique</h2>
                    <div className="section-sub">
                        <p><strong>Strengths:</strong> Very informative on most common actors, allows the user to explore trends throughout time, and enables the user to click and display analytics on the right if the user sees clusters of points in a specific region. It allows immediate identification of the conflicted country and breaks down the actors seen. This potentially gives better information for the user to plan for safe tourist locations!</p>
-                       <p><strong>Limitations:</strong>The bar chart breaks down the actors on the right but cannot further breakdown the actor2 and event type that happened because it is already colored by the ACTOR1.
+                       <p><strong>Limitations: </strong>The bar chart breaks down the actors on the right but cannot further breakdown the actor2 and event type that happened because it is already colored by the ACTOR1.
                        </p>
                    </div>
                </div>
