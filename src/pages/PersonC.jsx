@@ -143,10 +143,10 @@ function PersonC() {
                     <h2 className="subtitle">Channels</h2>
                     <div className="section-sub">
                         <div>
-                            <p><strong>Position (X-axis):</strong> Encodes actor pair on the bar chart.</p>
+                            <p><strong>Position (X-axis):</strong> Encodes region on the bar chart.</p>
                             <p><strong>Position (Y-axis):</strong> Encodes count of incidents on the bar chart.</p>
-                            <p><strong>Color (Categorical):</strong> Encodes region on the bar chart.</p>
-                            <p><strong>Color (Ordinal):</strong> Encodes count of incidents per region on the choropleth.</p>
+                            <p><strong>Color (Categorical):</strong> Encodes actor pair on the bar chart.</p>
+                            <p><strong>Color (Ordinal):</strong> Encodes count of incidents per region on the choropleth, regions with no data are painted in red.</p>
                         </div>
                     </div>
                 </div>
@@ -156,8 +156,8 @@ function PersonC() {
                     <h2 className="subtitle">Interactivity</h2>
                     
                         <p><strong>Interaction Dropdown:</strong> The main focus of the chart, allows the user to select the Interaction they want to view the distribution of. This effectively lets us pack 20 different charts into just one dropdown menu.</p>
-                        <p><strong>Click Interaction:</strong> This lets us take a closer look at any region that might be of interest and get an in-depth view of the actor landscape for that region and interaction type.</p>    
-                        <p><strong>Tooltips:</strong> Encodes region, count of incidents, and interaction and mainly exists to help the user decide which region to click on. Since the tooltip works on both charts, this also allows users to find the name of the region they want to explore on the stacked bar chart and then seek it out on the map.</p>
+                        <p><strong>Click Interaction:</strong> This lets us take a closer look at any region that might be of interest and get an in-depth view of the actor landscape for that region and interaction type. This interaction is also bidirectional, meaning that the region can be selected either by clicking it on the choropleth or the corresponding bar on the histogram</p>    
+                        <p><strong>Tooltips:</strong> Encodes region, count of incidents, and interaction and mainly exists to help the user decide which region to click on. The tooltip on the bar chart is the same but encodes actor pair instead of region.</p>
                         
                         
                     
@@ -214,7 +214,7 @@ function PersonC() {
                     <h2 className="subtitle">Visualization Choices and Justification</h2>
                     <div className="section-sub">
                         <p>
-                            <strong>Bar Chart:</strong> This is a relatively simple chart that is intended to give a visual overview of the conflict landscape at any given time by showing the distribution of incidents across regions, as well as the names and distribution of all present actors.
+                            <strong>Bar Chart:</strong> This is a relatively simple chart that is intended to give a visual overview of the conflict landscape at any given time by showing the distribution of incidents across regions, as well as the names and distribution of all present actors. This chart is also sorted by count of incidents to give a better visual representation of where the hotspots are at different points in time.
                         </p>
                         <p>
                             <strong>Line Chart:</strong> This chart shows the progression of the intensity of the conflict over time, but mainly serves as effectively a time slider used to manipulate the bar chart.
@@ -228,9 +228,9 @@ function PersonC() {
                     <div className="section-sub">
 
                         <div>
-                            <p><strong>Position (X-axis):</strong> Used to encode region on the bar chart and year on the line chart.
+                            <p><strong>Position (X-axis):</strong> Used to encode count of incidents on the bar chart and year on the line chart.
                             </p>
-                            <p><strong>Position (Y-axis):</strong> Used to encode count of incidents on both charts.
+                            <p><strong>Position (Y-axis):</strong> Used to encode region on the bar chart, and count of incidents on the line chart.
                             </p>
                             <p><strong>Color (Categorical):</strong> Used to encode actor pairs on the bar chart.
                             </p>
@@ -243,6 +243,7 @@ function PersonC() {
                     <h2 className="subtitle">Interactivity</h2>
                     
                     <strong>Brush Selection:</strong> This is what really makes this graph special, enabling the user to easily observe changes in the conflict over time by panning left to right. Also has a manipulatable size which allows for creating custom snapshots of the conflict distribution.
+                    <strong>Point Selection:</strong> This enables the viewer to select a single region from the bar chart and view the count of incidents over time in that region.
                     
                 </div>
 
