@@ -66,7 +66,6 @@ function PersonC() {
                             <p><strong>Position (Y-axis):</strong> Represents latitude on the scatterplot, and fatalities per year on the line chart.</p>
                             <p><strong>Color (Categorical):</strong> Linking variable that represents actor pair on both charts, and has a clickable legend to focus on specific actor pairs.</p>
                             <p><strong>Size (Continuous):</strong> Represents fatalities per incident on the scatterplot.</p>
-                            <p><strong>Color (Categorical):</strong> Also represents fatalities per incident on the scatterplot for situations where the size is difficult to parse due to clustering. Also encodes region names to build knowledge of the geography of Somalia and to provide general context.</p>
                         </div>
                     </div>
                 </div>
@@ -76,7 +75,7 @@ function PersonC() {
                     <h2 className="subtitle">Interactivity</h2>
                         <p><strong>Click Selection:</strong> As mentioned earlier, the legend is clickable to allow users to examine one actor pair at a time, or shift click to examine multiple actor pairs at once. This is designed to help combat visual clutter on the scatterplot, but also to enable easier parsing of trends.
                         </p>
-                        <p><strong>Tooltips:</strong> Acts as an assisting tool to the size encoding to show the nuance between bins as well as show region names.
+                        <p><strong>Tooltips:</strong> Alongside size, also represents fatalities per incident on the scatterplot for situations where the size is difficult to parse due to clustering. Also encodes region names to build knowledge of the geography of Somalia and to provide general context.
                         </p>
                 </div>
 
@@ -168,7 +167,7 @@ function PersonC() {
                     <h2 className="subtitle">Critique</h2>
                     <div className="section-sub">
                         <p><strong>Strengths:</strong> The bi-directional interactivity gives a lot of choices to the user, but the chart is still simple and effective even if the user only uses the dropdown menu.</p>
-                        <p><strong>Limitations:</strong>No option to show all interactions at once like is possible with the regions, meaning there is no way to see a full overview of all attributes. </p>
+                        <p><strong>Limitations:</strong> No option to show all interactions at once like is possible with the regions, meaning there is no way to see a full overview of all attributes. </p>
                     </div>
                 </div>
             </div>
@@ -242,9 +241,10 @@ function PersonC() {
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
                     
-                    <strong>Brush Selection:</strong> This is what really makes this graph special, enabling the user to easily observe changes in the conflict over time by panning left to right. Also has a manipulatable size which allows for creating custom snapshots of the conflict distribution.
-                    <strong>Point Selection:</strong> This enables the viewer to select a single region from the bar chart and view the count of incidents over time in that region.
-                    
+                        <p><strong>Brush Selection:</strong> This is what really makes this graph special, enabling the user to easily observe changes in the conflict over time by panning left to right. Also has a manipulatable size which allows for creating custom snapshots of the conflict distribution.</p>
+                        <p><strong>Point Selection:</strong> This enables the viewer to select a single region from the bar chart and view the count of incidents over time in that region.</p>
+                        <p><strong>Tooltip:</strong> Encodes the count of incidents and actor pair on the bar chart, enables the viewer to more precisely see the number of incidents associated with an actor pair in a region while examining the bars.</p>
+        
                 </div>
 
                 {/* Critique */}
