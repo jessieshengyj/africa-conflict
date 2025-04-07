@@ -24,8 +24,8 @@ function PersonA() {
                     <h2 className="subtitle">Visualization View</h2>
                     <iframe
                         src="/africa-conflict/charts/wendy_plot1.html"
-                        width="1200"
-                        height="1120"
+                        width="1250"
+                        height="550"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -124,7 +124,7 @@ function PersonA() {
                     <iframe
                         src="/africa-conflict/charts/wendy_plot2.html"
                         width="1200"
-                        height="940"
+                        height="350"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -135,13 +135,12 @@ function PersonA() {
                     <h2 className="subtitle">Summary of Tasks</h2>
                     <div className="section-sub">
                         <p>
-                            This visualization focuses on understanding actor alliances, their stability, and their
-                            correlation with conflict intensity. The tasks involve:
+                        This visualization investigates the temporal dynamics of conflict actor alliances and their correlation with shifts in conflict intensity, as reflected through fatalities. The tasks involve:
                         </p>
                         <ul className="list">
-                            <li>Identifying frequent and impactful alliances.</li>
-                            <li>Tracking alliance stability across time.</li>
-                            <li>Visualizing temporal trends in fatalities for specific actors.</li>
+                            <li>Identification of high-fatality alliances between actor types.</li>
+                            <li>Exploration of how these alliances evolve across time.</li>
+                            <li>Country-specific analysis of actor interaction patterns and their impact on conflict intensity.</li>
                         </ul>
                     </div>
                 </div>
@@ -151,13 +150,7 @@ function PersonA() {
                     <div className="section-sub">
                         <h2 className="subtitle">Visualization Choices and Justification</h2>
                         <p>
-                            <strong>Heatmap:</strong> The heatmap’s color gradient effectively highlights alliance impact, while size encoding reinforces the frequency of alliances. This format efficiently displays correlation patterns in a dense dataset. Strong contrast colors provide intuitive interpretation of high-fatality alliances.
-                        </p>
-                        <p>
-                            <strong>Stability Indicator (Circle Plot):</strong> A scatter plot with color-encoded stability metrics emphasizes trends in alliance durability across time. Circle size further enhances the visibility of stable alliances.
-                        </p>
-                        <p>
-                            <strong>Trend Line:</strong> This line chart visualizes total fatalities per actor over time, providing a clear view of temporal shifts in conflict intensity. The addition of distinct actor colors allows effective pattern distinction.
+                            <strong>Heatmap:</strong> The heatmap was chosen to visualize the datalities resulting from interactions between different actor types (Actor 1 and Actor 2) across time and country. The color gradient encodes the total fatalities, allowing quick visual identification of the most intense alliances. Combined with interactive filters (country and year), this design supports deep exploration of patterns in a dense, multi-dimensional dataset.
                         </p>
                     </div>
                 </div>
@@ -172,21 +165,7 @@ function PersonA() {
                             <p><strong>Position (Y-axis):</strong> Displays Actor 1 types for alliance visualization.</p>
                             <p><strong>Color (Gradient):</strong> Effectively encodes fatalities in the heatmap, ensuring
                                 impactful alliances are immediately visible.</p>
-                            <p><strong>Size Encoding:</strong> Represents the number of events as a proxy for alliance stability.</p>
-                        </div>
-
-                        <div>
-                            <li><strong>Stability Indicator(Circle Plot):</strong></li>
-                            <p><strong>Position (X-axis):</strong> Represents time (years) for temporal stability analysis.</p>
-                            <p><strong>Position (Y-axis):</strong> Displays Actor 1 types for alliance visualization.</p>
-                            <p><strong>Color (Gradient):</strong> Represents event count, emphasizing stable alliances.</p>
-                        </div>
-
-                        <div>
-                            <li><strong>Trend Line:</strong></li>
-                            <p><strong>Position (X-axis):</strong> Represents time (years) for tracking fatality trends.</p>
-                            <p><strong>Position (Y-axis):</strong> Represents total fatalities for accurate comparison.</p>
-                            <p><strong>Color (Categorical):</strong> Differentiates actor types to enhance comparison.</p>
+                            <p><strong>Tooltips: </strong> Displays specific details for each alliance by year and country for added context.</p>
                         </div>
                     </div>
                 </div>
@@ -194,14 +173,11 @@ function PersonA() {
                 {/* Interactivity */}
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
-                        <p><strong>Country Dropdown Selector:</strong> Enhances focus by limiting data to a specific
-                            country across all charts.
+                        <p><strong>Country Dropdown Selector:</strong> Enables focused analysis on a specific country’s actor interactions.
                         </p>
-                        <p><strong>Year Slider:</strong> Empowers dynamic exploration of actor alliances for individual
-                            years.
+                        <p><strong>Year Slider:</strong> Allows dynamic filtering by year to analyze temporal changes in alliances and fatalities.
                         </p>
-                        <p><strong>Tooltips:</strong> Present throughout all charts to provide deeper insights without
-                            visual clutter.
+                        <p><strong>Tooltips:</strong> Provides granular insights without crowding the visual space.
                         </p>
                 </div>
 
@@ -209,14 +185,14 @@ function PersonA() {
                 <div className="section">
                     <h2 className="subtitle">Critique</h2>
                     <div className="section-sub">
-                        <p><strong>Strengths:</strong> This visualization effectively integrates multiple visual elements to explore actor alliances and their impact on conflict intensity over time.
-                        The heatmap’s color gradient clearly emphasizes high-fatality alliances, while size encoding effectively conveys alliance stability through event counts. The circle plot
-                        complements this by visualizing alliance stability patterns over time, making it easier to identify persistent partnerships. The trend line further enhances insights by
-                        illustrating how shifts in actor alliances correspond to changes in conflict intensity. The country dropdown selector efficiently filters all three charts simultaneously,
-                        improving focus when analyzing specific regions. The year slider adds flexibility by dynamically adjusting the heatmap to explore alliances within distinct periods.</p>
-                        <p><strong>Limitations:</strong>The stability indicator’s blue gradient may appear too subtle, making it harder to distinguish differences in alliance frequency — a stronger
-                        color gradient or larger dots could improve visibility. Additionally, the trend line may become cluttered when displaying multiple actor types, especially if some groups contribute
-                        minimally to total fatalities. Introducing a toggle to filter dominant actors or applying a smoothing technique could improve clarity. </p>
+                        <p><strong>Strengths:</strong> This visualization effectively highlights the dynamics of actor alliances and their role in shaping conflict intensity. The heatmap design, 
+                        with its red color gradient, makes it easy to spot high-fatality alliances between actor types, offering clear insights into the most impactful interactions. By enabling 
+                        users to filter the data by country and year, the visualization supports focused exploration of both spatial and temporal patterns. The interactivity enhances usability, 
+                        allowing users to drill down into specific contexts and investigate year-by-year changes in alliance behavior. Tooltips provide immediate access to detailed information 
+                        without cluttering the visual space, making the chart both informative and clean.</p>
+                        <p><strong>Limitations:</strong> One limitation of the current design is the absence of an explicit indicator for alliance frequency, such as event count. As a result, 
+                        it is not always clear whether a high number of fatalities results from frequent low-intensity events or from a few extremely deadly incidents. Additionally, while the 
+                        country dropdown supports focused analysis, it restricts cross-country comparisons unless users manually switch between countries.</p>
                     </div>
                 </div>
             </div>
