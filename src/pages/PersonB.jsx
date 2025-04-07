@@ -95,12 +95,18 @@ function PersonB() {
                             and conflict intensity.
                         </li>
                         <li><strong>Multi-Selection:</strong> (Shift + Click) allows users to compare multiple
-                            countries, enabling deeper regional analysis. Users can select the top N conflict regions directly on the
+                            countries, enabling deeper regional analysis. Users can select the top N conflict regions
+                            directly on the
                             map to observe their spatial distribution, reducing cognitive load by allowing the
                             visualization to present insights dynamically.
                         </li>
-                        <li><strong>Tooltips:</strong> Provide precise numerical summaries and details of the data points
+                        <li><strong>Tooltips:</strong> Provide precise numerical summaries and details of the data
+                            points
                             without overwhelming the visual.
+                        </li>
+                        <li><strong>Interactive Selection & Averages:</strong> When one or more regions are selected on the bar chart, the
+                            average conflict intensity line updates in real time to reflect only the selected data, offering
+                            instant comparative insight.
                         </li>
                     </ul>
                 </div>
@@ -324,12 +330,24 @@ function PersonB() {
                 <div className="section">
                     <h2 className="subtitle">Interactivity</h2>
                     <ul className="list">
-                        <li><strong>Interactive Legend:</strong> The interactive legend in the line chart allows users
-                            to filter specific country trends, focusing on individual or comparative patterns.
+                        <li><strong>Time Slider & Dynamic Year Indicator:</strong> Adjusting the slider widget below the
+                            map dynamically updates the geographic distribution of conflict hotspots data on all three
+                            visualizations.
+                            The selected year
+                            is clearly indicated by a vertical red line on the line chart, seamlessly linking temporal
+                            exploration across visualizations. Together, they enable a deeper understanding of how
+                            conflict intensity shifts across different years.
                         </li>
-                        <li><strong>Time Slider:</strong> The slider widget below the map lets users adjust the time
-                            frame, dynamically updating the geographic distribution of conflict hotspots. This enables a
-                            deeper understanding of how conflict intensity shifts across different years.
+                        <li><strong>Bidirectional Highlighting:</strong> Clicking on a country line or point in the line
+                            chart highlights the corresponding country on the map and updates the bar chart to show
+                            detailed data specific to the selected country. Additionally, selecting a country on the map
+                            and on the bar chart automatically highlights and emphasizes the respective country's data
+                            in the other two charts,
+                            supporting intuitive navigation and comparative analysis.
+                        </li>
+                        <li><strong>Tooltips:</strong> Hovering over points and regions displays tooltips
+                            with detailed information including country, year, and the number of conflicts, enhancing
+                            clarity and providing quick insights.
                         </li>
                     </ul>
                 </div>
@@ -341,10 +359,13 @@ function PersonB() {
                         <p><strong>Strengths:</strong> The visualization successfully integrates both temporal and
                             spatial dimensions of conflict data, providing a comprehensive view of how conflict
                             intensity shifts across years and geographic regions. The use of both a line chart and a
-                            dynamic map allows users to explore both trends over time and geographical patterns simultaneously.
-                            The interactive elements, like the legend and time slider, significantly enhance user experience and exploration.</p>
+                            dynamic map allows users to explore both trends over time and geographical patterns
+                            simultaneously.
+                            The interactive elements, like the legend and time slider, significantly enhance user
+                            experience and exploration.</p>
                         <p><strong>Limitations:</strong> While the visualization is effective, it could be further
-                            refined in a few areas. The line chart might benefit from a smoothing option or smaller time intervals to help
+                            refined in a few areas. The line chart might benefit from a smoothing option or smaller time
+                            intervals to help
                             reduce abrupt fluctuations, making long-term trends clearer. Additionally, the map's
                             legend for event size encoding could be improved for clarity to ensure users interpret
                             variations in size correctly. Finally, adding regional groupings or filtering options could
