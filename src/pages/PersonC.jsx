@@ -23,7 +23,7 @@ function PersonC() {
                     <iframe
                         src="/africa-conflict/charts/rowan_plot1.html"
                         width="1200"
-                        height="400"
+                        height="380"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -104,7 +104,7 @@ function PersonC() {
                     <iframe
                         src="/africa-conflict/charts/rowan_plot2.html"
                         width="1200"
-                        height="690"
+                        height="620"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
@@ -188,7 +188,7 @@ function PersonC() {
                     <iframe
                         src="/africa-conflict/charts/rowan_plot3.html"
                         width="1450"
-                        height="650"
+                        height="610"
                         frameBorder="0"
                         className="iframe-view"
                     ></iframe>
