@@ -32,7 +32,7 @@ function PersonD() {
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz1.html"
+                       src="/africa-conflict/charts/yao_plot1.html"
                        width="1200"
                        height="600"
                        frameBorder="0"
@@ -147,7 +147,7 @@ function PersonD() {
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz2.html"
+                       src="/africa-conflict/charts/yao_plot2.html"
                        width="1200"
                        height="550"
                        frameBorder="0"
@@ -252,7 +252,7 @@ function PersonD() {
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz3.html"
+                       src="/africa-conflict/charts/yao_plot3.html"
                        width="1450"
                        height="920"
                        frameBorder="0"
