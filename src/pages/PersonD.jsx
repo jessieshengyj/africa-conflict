@@ -18,10 +18,21 @@ function PersonD() {
                    </p>
                 </div> 
 
+                {/*    /!* Summary of Task *!/*/}
+               <div className="section">
+                   <h2 className="subtitle">Dashboard Summary</h2>
+                   <div className="section-sub">
+                       <p>
+                       This dashboard informs the user of violent tendencies of each actor throughout the years. It summarizes the top 10 most violent actors based on the number of fatalities that have occurred. A major assumption is that ACTOR1 is the conflict instigator and ACTOR2 is the reactor. Therefore it can be useful to identify the most violent conflict 1’s from a tourist’s standpoint on who to especially avoid when traveling across Africa. 
+                       </p>
+                       
+                   </div>
+               </div>
+
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz1.html"
+                       src="/africa-conflict/charts/yao_plot1.html"
                        width="1200"
                        height="600"
                        frameBorder="0"
@@ -122,10 +133,21 @@ function PersonD() {
                    </p>
                </div>
 
+               {/*    /!* Summary of Task *!/*/}
+               <div className="section">
+                   <h2 className="subtitle">Dashboard Summary</h2>
+                   <div className="section-sub">
+                       <p>
+                       The dashboard informs of common interactions between actors (ACTOR1 and ACTOR2) and answers the question on what are the most common types of conflicts seen. The bar displays the most common ACTOR1’s which can also be filtered by country and each bar is colored by the ACTOR2. The sub-bar is clickable and shows a breakdown of the most common types of interactions with that actor. As a result it gives expectations on types of conflicts to occur so that a tourist can plan and schedule their trip accordingly.
+                       </p>
+                       
+                   </div>
+               </div>
+
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz2.html"
+                       src="/africa-conflict/charts/yao_plot2.html"
                        width="1200"
                        height="550"
                        frameBorder="0"
@@ -216,10 +238,21 @@ function PersonD() {
                    </p>
                </div>
 
+               {/*    /!* Summary of Task *!/*/}
+               <div className="section">
+                   <h2 className="subtitle">Dashboard Summary</h2>
+                   <div className="section-sub">
+                       <p>
+                       This dashboard gives geographical insight into conflict density of each actor. This is ideal when a tourist starts to plan their trip. They can observe which countries are the most conflicted and exact locations that they tend to happen in. A dropdown menu filters out the types of conflict. The bar graph on the right also summarizes the countries from most to least conflicts.
+                       </p>
+                       
+                   </div>
+               </div>
+
                <div className="iframe-container flex flex-col section">
                    <h2 className="subtitle">Visualization View</h2>
                    <iframe
-                       src="/africa-conflict/charts/yao_viz3.html"
+                       src="/africa-conflict/charts/yao_plot3.html"
                        width="1450"
                        height="920"
                        frameBorder="0"
